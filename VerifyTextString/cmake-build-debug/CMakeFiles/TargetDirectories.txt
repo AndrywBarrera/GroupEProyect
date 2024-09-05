@@ -1,0 +1,5 @@
+C:/Users/andry/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/VerifyTextString.dir
+C:/Users/andry/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/andry/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/endswith.dir
+C:/Users/andry/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/andry/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/rebuild_cache.dir
