@@ -141,19 +141,6 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-#=============================================================================
-# Target rules for targets named endswith
-
-# Build rule for target.
-endswith: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 endswith
-.PHONY : endswith
-
-# fast build rule for target.
-endswith/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\endswith.dir\build.make CMakeFiles/endswith.dir/build
-.PHONY : endswith/fast
-
 endswith.obj: endswith.c.obj
 .PHONY : endswith.obj
 
@@ -161,7 +148,6 @@ endswith.obj: endswith.c.obj
 endswith.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/endswith.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/endswith.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\endswith.dir\build.make CMakeFiles/endswith.dir/endswith.c.obj
 .PHONY : endswith.c.obj
 
 endswith.i: endswith.c.i
@@ -171,7 +157,6 @@ endswith.i: endswith.c.i
 endswith.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/endswith.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/endswith.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\endswith.dir\build.make CMakeFiles/endswith.dir/endswith.c.i
 .PHONY : endswith.c.i
 
 endswith.s: endswith.c.s
@@ -181,7 +166,6 @@ endswith.s: endswith.c.s
 endswith.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/endswith.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/endswith.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\endswith.dir\build.make CMakeFiles/endswith.dir/endswith.c.s
 .PHONY : endswith.c.s
 
 main.obj: main.c.obj
@@ -220,7 +204,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... VerifyTextString
-	@echo ... endswith
 	@echo ... main
 	@echo ... endswith.obj
 	@echo ... endswith.i
