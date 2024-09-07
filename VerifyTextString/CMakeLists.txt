@@ -5,7 +5,10 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(VerifyTextString main.c
         endswith.c
-        endswith.h)
+        palindroma.c
+        endswith.h
+        palindroma.h)
 
 add_executable(main main.c
-        endswith.c)
+        endswith.c
+palindroma.c)
