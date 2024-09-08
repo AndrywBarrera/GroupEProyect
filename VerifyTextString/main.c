@@ -1,8 +1,13 @@
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "endswith.h"
 #include <string.h>
 #include "palindroma.h"
+#include "splitString.h"
+
+
 
 void mainMenu();
 
@@ -37,7 +42,7 @@ int main() {
 
 }
 
- void palindroma() {
+void palindroma() {
      char word[100];
      char wordutf[100];
 
@@ -50,7 +55,29 @@ int main() {
      fflush(stdin);
 
      printf(" Respuesta: %d \n\n ", isPalindroma(word, strlen(word)));
- }
+}
+
+void splitStrings() {
+    char text[500];
+
+    printf("Ingrese una cadena de texto: ");
+    fgets(text, sizeof(text), stdin);
+    text[strcspn(text, "\n")] = 0;
+
+    char* output = split(text);
+
+    if (output != NULL) {
+        printf("Cadena dividida en caracteres: ");
+        for (int i = 0; i < strlen(text); i++) {
+            printf("%c ", output[i]);
+        }
+        printf("\n");
+
+        free(output);
+    } else {
+        printf("Error de asignación de memoria.\n");
+    }
+}
 
     void mainMenu(){
 
@@ -80,7 +107,7 @@ int main() {
                 case '2' : NULL;
                 break;
 
-                case '3' : NULL;
+                case '3' : splitStrings();
                 break;
 
                 case '4' : NULL;

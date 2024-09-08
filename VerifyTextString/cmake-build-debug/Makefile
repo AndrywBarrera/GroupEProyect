@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Home\AppData\Local\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Users\Home\AppData\Local\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString"
+CMAKE_SOURCE_DIR = C:\Users\Home\CLionProjects\TrabajoGrupalE\GroupEProyect\VerifyTextString
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Home\CLionProjects\TrabajoGrupalE\GroupEProyect\VerifyTextString\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programa
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Users\Home\AppData\Local\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\Home\AppData\Local\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Home\CLionProjects\TrabajoGrupalE\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles C:\Users\Home\CLionProjects\TrabajoGrupalE\GroupEProyect\VerifyTextString\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Home\CLionProjects\TrabajoGrupalE\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -195,6 +195,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+palindroma.obj: palindroma.c.obj
+.PHONY : palindroma.obj
+
+# target to build an object file
+palindroma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/palindroma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/palindroma.c.obj
+.PHONY : palindroma.c.obj
+
+palindroma.i: palindroma.c.i
+.PHONY : palindroma.i
+
+# target to preprocess a source file
+palindroma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/palindroma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/palindroma.c.i
+.PHONY : palindroma.c.i
+
+palindroma.s: palindroma.c.s
+.PHONY : palindroma.s
+
+# target to generate assembly for a file
+palindroma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/palindroma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/palindroma.c.s
+.PHONY : palindroma.c.s
+
+splitString.obj: splitString.c.obj
+.PHONY : splitString.obj
+
+# target to build an object file
+splitString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/splitString.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/splitString.c.obj
+.PHONY : splitString.c.obj
+
+splitString.i: splitString.c.i
+.PHONY : splitString.i
+
+# target to preprocess a source file
+splitString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/splitString.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/splitString.c.i
+.PHONY : splitString.c.i
+
+splitString.s: splitString.c.s
+.PHONY : splitString.s
+
+# target to generate assembly for a file
+splitString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VerifyTextString.dir\build.make CMakeFiles/VerifyTextString.dir/splitString.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/splitString.c.s
+.PHONY : splitString.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -211,6 +265,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... palindroma.obj
+	@echo ... palindroma.i
+	@echo ... palindroma.s
+	@echo ... splitString.obj
+	@echo ... splitString.i
+	@echo ... splitString.s
 .PHONY : help
 
 

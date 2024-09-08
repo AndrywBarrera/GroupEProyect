@@ -7,8 +7,12 @@ add_executable(VerifyTextString main.c
         endswith.c
         palindroma.c
         endswith.h
-        palindroma.h)
+        palindroma.h
+        splitString.h
+        splitString.c)
 
 add_executable(main main.c
         endswith.c
-palindroma.c)
+        palindroma.c
+        splitString.c
+)

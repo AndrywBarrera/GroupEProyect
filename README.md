@@ -1,6 +1,6 @@
 # GroupEProyect
 
-Este es un un proyecto academico colaborativo desarrollado por estudiantes de Ingenieria de sistemas y computación, en donde se presenta la lógica de diferentes funcionalidades en lenguaje C.
+Este es un un proyecto academico colaborativo desarrollado por estudiantes de Ingenieria de sistemas y computaciï¿½n, en donde se presenta la lï¿½gica de diferentes funcionalidades en lenguaje C.
 
 Para el desarrollo de este proyetco se han empleado las siguentes:
 
@@ -14,7 +14,7 @@ Para el desarrollo de este proyetco se han empleado las siguentes:
 
 ## Responsables:
 
-- Juan Steban León
+- Juan Steban Leon
 - Andryw Barrera
 - Estefania Rojas
 - Valentina Vega 

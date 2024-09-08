@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString/endswith.c" "CMakeFiles/main.dir/endswith.c.obj" "gcc" "CMakeFiles/main.dir/endswith.c.obj.d"
-  "C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString/main.c" "CMakeFiles/main.dir/main.c.obj" "gcc" "CMakeFiles/main.dir/main.c.obj.d"
+  "C:/Users/Home/CLionProjects/TrabajoGrupalE/GroupEProyect/VerifyTextString/endswith.c" "CMakeFiles/main.dir/endswith.c.obj" "gcc" "CMakeFiles/main.dir/endswith.c.obj.d"
+  "C:/Users/Home/CLionProjects/TrabajoGrupalE/GroupEProyect/VerifyTextString/main.c" "CMakeFiles/main.dir/main.c.obj" "gcc" "CMakeFiles/main.dir/main.c.obj.d"
+  "C:/Users/Home/CLionProjects/TrabajoGrupalE/GroupEProyect/VerifyTextString/palindroma.c" "CMakeFiles/main.dir/palindroma.c.obj" "gcc" "CMakeFiles/main.dir/palindroma.c.obj.d"
+  "C:/Users/Home/CLionProjects/TrabajoGrupalE/GroupEProyect/VerifyTextString/splitString.c" "CMakeFiles/main.dir/splitString.c.obj" "gcc" "CMakeFiles/main.dir/splitString.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
