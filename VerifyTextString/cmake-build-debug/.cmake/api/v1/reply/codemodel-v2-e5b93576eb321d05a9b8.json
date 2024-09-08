@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "VerifyTextString::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-VerifyTextString-Debug-6704c5e7d28e4b785b28.json",
+					"jsonFile" : "target-VerifyTextString-Debug-caa512fd6000278428ce.json",
 					"name" : "VerifyTextString",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-fa32af178960e97101b0.json",
+					"jsonFile" : "target-main-Debug-242a73010949e52cc730.json",
 					"name" : "main",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programaci\u00f3n 3/Ejemplos C/GroupEProyect/VerifyTextString/cmake-build-debug",
-		"source" : "C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programaci\u00f3n 3/Ejemplos C/GroupEProyect/VerifyTextString"
+		"build" : "C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug",
+		"source" : "C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString"
 	},
 	"version" : 
 	{

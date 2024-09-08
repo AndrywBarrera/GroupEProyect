@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/VerifyTextString.dir/endswith.c.obj.d"
   "CMakeFiles/VerifyTextString.dir/main.c.obj"
   "CMakeFiles/VerifyTextString.dir/main.c.obj.d"
+  "CMakeFiles/VerifyTextString.dir/palindroma.c.obj"
+  "CMakeFiles/VerifyTextString.dir/palindroma.c.obj.d"
   "VerifyTextString.exe"
   "VerifyTextString.exe.manifest"
   "VerifyTextString.pdb"

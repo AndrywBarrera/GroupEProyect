@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.ex
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString"
+CMAKE_SOURCE_DIR = "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VerifyTextString.dir/depend.make
@@ -69,48 +69,64 @@ include CMakeFiles/VerifyTextString.dir/progress.make
 include CMakeFiles/VerifyTextString.dir/flags.make
 
 CMakeFiles/VerifyTextString.dir/main.c.obj: CMakeFiles/VerifyTextString.dir/flags.make
-CMakeFiles/VerifyTextString.dir/main.c.obj: C:/Users/valen/Documents/University/QUINTO\ SEMESTRE/Programación\ 3/Ejemplos\ C/GroupEProyect/VerifyTextString/main.c
+CMakeFiles/VerifyTextString.dir/main.c.obj: C:/Users/Juan\ Leon/CLionProjects/GroupEProyect/VerifyTextString/main.c
 CMakeFiles/VerifyTextString.dir/main.c.obj: CMakeFiles/VerifyTextString.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/VerifyTextString.dir/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/VerifyTextString.dir/main.c.obj -MF CMakeFiles\VerifyTextString.dir\main.c.obj.d -o CMakeFiles\VerifyTextString.dir\main.c.obj -c "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/VerifyTextString.dir/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/VerifyTextString.dir/main.c.obj -MF CMakeFiles\VerifyTextString.dir\main.c.obj.d -o CMakeFiles\VerifyTextString.dir\main.c.obj -c "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\main.c"
 
 CMakeFiles/VerifyTextString.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/VerifyTextString.dir/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\main.c" > CMakeFiles\VerifyTextString.dir\main.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\main.c" > CMakeFiles\VerifyTextString.dir\main.c.i
 
 CMakeFiles/VerifyTextString.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/VerifyTextString.dir/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\main.c" -o CMakeFiles\VerifyTextString.dir\main.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\main.c" -o CMakeFiles\VerifyTextString.dir\main.c.s
 
 CMakeFiles/VerifyTextString.dir/endswith.c.obj: CMakeFiles/VerifyTextString.dir/flags.make
-CMakeFiles/VerifyTextString.dir/endswith.c.obj: C:/Users/valen/Documents/University/QUINTO\ SEMESTRE/Programación\ 3/Ejemplos\ C/GroupEProyect/VerifyTextString/endswith.c
+CMakeFiles/VerifyTextString.dir/endswith.c.obj: C:/Users/Juan\ Leon/CLionProjects/GroupEProyect/VerifyTextString/endswith.c
 CMakeFiles/VerifyTextString.dir/endswith.c.obj: CMakeFiles/VerifyTextString.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/VerifyTextString.dir/endswith.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/VerifyTextString.dir/endswith.c.obj -MF CMakeFiles\VerifyTextString.dir\endswith.c.obj.d -o CMakeFiles\VerifyTextString.dir\endswith.c.obj -c "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\endswith.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/VerifyTextString.dir/endswith.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/VerifyTextString.dir/endswith.c.obj -MF CMakeFiles\VerifyTextString.dir\endswith.c.obj.d -o CMakeFiles\VerifyTextString.dir\endswith.c.obj -c "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\endswith.c"
 
 CMakeFiles/VerifyTextString.dir/endswith.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/VerifyTextString.dir/endswith.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\endswith.c" > CMakeFiles\VerifyTextString.dir\endswith.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\endswith.c" > CMakeFiles\VerifyTextString.dir\endswith.c.i
 
 CMakeFiles/VerifyTextString.dir/endswith.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/VerifyTextString.dir/endswith.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\endswith.c" -o CMakeFiles\VerifyTextString.dir\endswith.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\endswith.c" -o CMakeFiles\VerifyTextString.dir\endswith.c.s
+
+CMakeFiles/VerifyTextString.dir/palindroma.c.obj: CMakeFiles/VerifyTextString.dir/flags.make
+CMakeFiles/VerifyTextString.dir/palindroma.c.obj: C:/Users/Juan\ Leon/CLionProjects/GroupEProyect/VerifyTextString/palindroma.c
+CMakeFiles/VerifyTextString.dir/palindroma.c.obj: CMakeFiles/VerifyTextString.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/VerifyTextString.dir/palindroma.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/VerifyTextString.dir/palindroma.c.obj -MF CMakeFiles\VerifyTextString.dir\palindroma.c.obj.d -o CMakeFiles\VerifyTextString.dir\palindroma.c.obj -c "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\palindroma.c"
+
+CMakeFiles/VerifyTextString.dir/palindroma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/VerifyTextString.dir/palindroma.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\palindroma.c" > CMakeFiles\VerifyTextString.dir\palindroma.c.i
+
+CMakeFiles/VerifyTextString.dir/palindroma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/VerifyTextString.dir/palindroma.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\palindroma.c" -o CMakeFiles\VerifyTextString.dir\palindroma.c.s
 
 # Object files for target VerifyTextString
 VerifyTextString_OBJECTS = \
 "CMakeFiles/VerifyTextString.dir/main.c.obj" \
-"CMakeFiles/VerifyTextString.dir/endswith.c.obj"
+"CMakeFiles/VerifyTextString.dir/endswith.c.obj" \
+"CMakeFiles/VerifyTextString.dir/palindroma.c.obj"
 
 # External object files for target VerifyTextString
 VerifyTextString_EXTERNAL_OBJECTS =
 
 VerifyTextString.exe: CMakeFiles/VerifyTextString.dir/main.c.obj
 VerifyTextString.exe: CMakeFiles/VerifyTextString.dir/endswith.c.obj
+VerifyTextString.exe: CMakeFiles/VerifyTextString.dir/palindroma.c.obj
 VerifyTextString.exe: CMakeFiles/VerifyTextString.dir/build.make
 VerifyTextString.exe: CMakeFiles/VerifyTextString.dir/linkLibs.rsp
 VerifyTextString.exe: CMakeFiles/VerifyTextString.dir/objects1.rsp
 VerifyTextString.exe: CMakeFiles/VerifyTextString.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable VerifyTextString.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable VerifyTextString.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\VerifyTextString.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +138,6 @@ CMakeFiles/VerifyTextString.dir/clean:
 .PHONY : CMakeFiles/VerifyTextString.dir/clean
 
 CMakeFiles/VerifyTextString.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString" "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString" "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug" "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug" "C:\Users\valen\Documents\University\QUINTO SEMESTRE\Programación 3\Ejemplos C\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles\VerifyTextString.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString" "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString" "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug" "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug" "C:\Users\Juan Leon\CLionProjects\GroupEProyect\VerifyTextString\cmake-build-debug\CMakeFiles\VerifyTextString.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/VerifyTextString.dir/depend
 

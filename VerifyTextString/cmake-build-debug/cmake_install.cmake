@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString
+# Install script for directory: C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

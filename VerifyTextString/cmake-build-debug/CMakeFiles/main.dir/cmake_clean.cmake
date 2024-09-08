@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/endswith.c.obj.d"
   "CMakeFiles/main.dir/main.c.obj"
   "CMakeFiles/main.dir/main.c.obj.d"
+  "CMakeFiles/main.dir/palindroma.c.obj"
+  "CMakeFiles/main.dir/palindroma.c.obj.d"
   "libmain.dll.a"
   "main.exe"
   "main.exe.manifest"
