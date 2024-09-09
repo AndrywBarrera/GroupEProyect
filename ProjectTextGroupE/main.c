@@ -6,8 +6,7 @@
 #include <string.h>
 #include "palindroma.h"
 #include "splitString.h"
-
-
+#include "lastMeeting.h"
 
 void mainMenu();
 
@@ -16,26 +15,8 @@ int main() {
     return 0;
 }
 
-int buscarUltimaOcurrencia(const char* cadena, const char* subcadena) {
-    int lenCadena = strlen(cadena);
-    int lenSubcadena = strlen(subcadena);
 
-    if (lenSubcadena > lenCadena) {
-        return 0;
-    }
-
-    int ultimaPosicion = 0;
-
-    for (int i = 0; i <= lenCadena - lenSubcadena; i++) {
-        if (strncmp(&cadena[i], subcadena, lenSubcadena) == 0) {
-            ultimaPosicion = i + 1;
-        }
-    }
-
-    return ultimaPosicion;
-}
-
-void ejercicioBuscarSubcadena() {
+void searchSubFfix() {
     char cadena[100], subcadena[100];
 
     printf("Introduce la cadena: ");
@@ -47,7 +28,7 @@ void ejercicioBuscarSubcadena() {
     cadena[strcspn(cadena, "\n")] = 0;
     subcadena[strcspn(subcadena, "\n")] = 0;
 
-    int resultado = buscarUltimaOcurrencia(cadena, subcadena);
+    int resultado = searchLastMeeting(cadena, subcadena);
 
     if (resultado != 0) {
         printf("La subcadena comienza en la posición: %d\n", resultado);
@@ -56,7 +37,7 @@ void ejercicioBuscarSubcadena() {
     }
 }
 
- void endsWithFunction(){
+void endsWithFunction(){
 
     char str[100];
     char suffix[100];
@@ -119,7 +100,7 @@ void splitStrings() {
     }
 }
 
-    void mainMenu(){
+void mainMenu(){
 
         char option;
         char *menu = "<<<<<<<MENU PRINCIPAL>>>>>>\n\n"
@@ -137,11 +118,12 @@ void splitStrings() {
 
         do{
             printf( menu);
-            scanf("%c",&option);
+            scanf(" %c",&option);
             fflush(stdin);
-            getchar();
+            printf("<<<OPCION %c>>>\n", option);
+
             switch(option){
-                case '1' : ejercicioBuscarSubcadena();
+                case '1' : searchSubFfix();
                 break;
 
                 case '2' : NULL;
@@ -164,9 +146,8 @@ void splitStrings() {
 
                 case '8' : NULL;
                 break;
-
-
-
             }
+            getchar();
         }while( toupper(option) != 'X');
-    }
+}
+

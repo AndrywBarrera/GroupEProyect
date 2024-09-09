@@ -1,4 +1,5 @@
 #include <string.h>
+#include "endswith.h"
 
 int endsWith(const char *str, const char *suffix) {
     size_t strLen = strlen(str);//Longitud Cadena
