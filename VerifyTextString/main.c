@@ -16,6 +16,46 @@ int main() {
     return 0;
 }
 
+int buscarUltimaOcurrencia(const char* cadena, const char* subcadena) {
+    int lenCadena = strlen(cadena);
+    int lenSubcadena = strlen(subcadena);
+
+    if (lenSubcadena > lenCadena) {
+        return 0;
+    }
+
+    int ultimaPosicion = 0;
+
+    for (int i = 0; i <= lenCadena - lenSubcadena; i++) {
+        if (strncmp(&cadena[i], subcadena, lenSubcadena) == 0) {
+            ultimaPosicion = i + 1;
+        }
+    }
+
+    return ultimaPosicion;
+}
+
+void ejercicioBuscarSubcadena() {
+    char cadena[100], subcadena[100];
+
+    printf("Introduce la cadena: ");
+    fgets(cadena, 100, stdin);
+
+    printf("Introduce la subcadena a buscar: ");
+    fgets(subcadena, 100, stdin);
+
+    cadena[strcspn(cadena, "\n")] = 0;
+    subcadena[strcspn(subcadena, "\n")] = 0;
+
+    int resultado = buscarUltimaOcurrencia(cadena, subcadena);
+
+    if (resultado != 0) {
+        printf("La subcadena comienza en la posición: %d\n", resultado);
+    } else {
+        printf("La subcadena no se encuentra en la cadena.\n");
+    }
+}
+
  void endsWithFunction(){
 
     char str[100];
@@ -101,7 +141,7 @@ void splitStrings() {
             fflush(stdin);
             getchar();
             switch(option){
-                case '1' : NULL;
+                case '1' : ejercicioBuscarSubcadena();
                 break;
 
                 case '2' : NULL;
