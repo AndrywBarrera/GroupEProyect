@@ -10,8 +10,9 @@ add_executable(VerifyTextString main.c
         palindroma.h
         splitString.h
         splitString.c
+        lastMeeting.h
         lastMeeting.c
-        lastMeeting.h)
+)
 
 add_executable(main main.c
         endswith.c
