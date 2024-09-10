@@ -1,12 +1,13 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "endswith.h"
-#include <string.h>
 #include "palindroma.h"
 #include "splitString.h"
 #include "lastMeeting.h"
+#include "formatNumeric.h"
 
 void mainMenu();
 
@@ -15,80 +16,157 @@ int main() {
     return 0;
 }
 
+bool isNumericValidated(const char *cadena) {
+    char *endptr;
+    strtod(cadena, &endptr);
+
+    // Verifica si se produjo una conversión completa y si no hay caracteres no numéricos
+    return *endptr == '\0' && endptr != cadena;
+}
+
+bool isEmptyText(const char *cadena) {
+    while (*cadena != '\0') {
+        if (!isspace((unsigned char) *cadena)) {
+            return false;
+        }
+        cadena++;
+    }
+    return true;
+}
 
 void searchSubFfix() {
     char cadena[100], subcadena[100];
+    bool verify = false;
+    do {
+        printf("Introduce la cadena: ");
+        fgets(cadena, 100, stdin);
+        verify = isEmptyText(cadena);
+        if (verify) {
+            printf("-- No puedes dejar vacia la cadena --\n");
+        }
+    } while (verify);
+    do {
+        printf("Introduce la subcadena a buscar: ");
+        fgets(subcadena, 100, stdin);
+        verify = isEmptyText(subcadena);
+        if (verify) {
+            printf("-- No puedes dejar vacia la SubCadena --\n");
+        }
+    } while (verify);
 
-    printf("Introduce la cadena: ");
-    fgets(cadena, 100, stdin);
-
-    printf("Introduce la subcadena a buscar: ");
-    fgets(subcadena, 100, stdin);
-
-    cadena[strcspn(cadena, "\n")] = 0;
-    subcadena[strcspn(subcadena, "\n")] = 0;
+    cadena[strcspn(cadena, "\n")] = '\0';
+    subcadena[strcspn(subcadena, "\n")] = '\0';
 
     int resultado = searchLastMeeting(cadena, subcadena);
 
     if (resultado != 0) {
-        printf("La subcadena comienza en la posición: %d\n", resultado);
+        printf("* La subcadena comienza en la posición: %d\n", resultado);
     } else {
-        printf("La subcadena no se encuentra en la cadena.\n");
+        printf("* La subcadena no se encuentra en la cadena.\n");
     }
+    getchar();
 }
 
-void endsWithFunction(){
-
+void endsWithFunction() {
     char str[100];
     char suffix[100];
-    //Cadena
-    printf("Ingrese la cadena completa: ");
-    //Entrada estandar de Usuario, cadena del apuntador
-    //Tiene su tamaño predefinido
-    fgets(str, sizeof(str), stdin);
+    bool verify = false;
+    do {
+        //Cadena
+        printf("Ingrese la cadena completa: ");
+        //Entrada estandar de Usuario, cadena del apuntador
+        //Tiene su tamaño predefinido
+        fgets(str, sizeof(str), stdin);
+        verify = isEmptyText(str);
+        if (verify) {
+            printf("-- No puedes dejar vacia la cadena --\n");
+        }
+    } while (verify);
+
+    do {
+        //SubCadena
+        printf("Ingrese la subcadena: ");
+        fgets(suffix, sizeof(suffix), stdin);
+        verify = isEmptyText(suffix);
+        if (verify) {
+            printf("-- No puedes dejar vacia la SubCadena --\n");
+        }
+    } while (verify);
     //Buscar Caracter de Salto y Eliminarlo para evitar Problemas con fgets
     str[strcspn(str, "\n")] = '\0';
-    
-    //SubCadena
-    printf("Ingrese la subcadena: ");
-    fgets(suffix, sizeof(suffix), stdin);
-    
-
     suffix[strcspn(suffix, "\n")] = '\0';
-
-
     int result = endsWith(str, suffix);
+    printf("* Resultado: %d\n\n", result);
+}
 
-    printf("Resultado: %d\n\n", result);
+void formatValue() {
+    char str[100];
+    double valor;
+    char resultado[50];
+    bool isNumeric = false;
+    do {
+        bool verify = false;
+        do {
+            //Cadena
+            printf("Ingrese un valor numérico: ");
+            //Entrada estandar de Usuario, cadena del apuntador
+            //Tiene su tamaño predefinido
+            fgets(str, sizeof(str), stdin);
+            verify = isEmptyText(str);
+            if (verify) {
+                printf("-- No puedes dejar vacio el numero --\n");
+            }
+        } while (verify);
 
+        str[strcspn(str, "\n")] = '\0';
+        isNumeric = isNumericValidated(str);
+        if (isNumeric) {
+            // Convertir la cadena a
+            sscanf(str, "%lf", &valor);
+            formatValor(valor, resultado);
+            printf("* Valor formateado: %s\n", resultado);
+        } else {
+            printf("Entrada inválida. Asegúrate de ingresar un número.\n");
+        }
+    } while (!isNumeric);
 }
 
 void palindroma() {
-     char word[100];
-     char wordutf[100];
+    char word[100];
 
-     //anita lava la tina es palindroma
-     //Anita, la gorda lagartona, no traga la droga latina. es palindroma
-     printf("Ingrese una cadena de texto: ");
-     fgets(word, 100, stdin);
-     word[strcspn(word, "\n")] = 0;
+    //anita lava la tina es palindroma
+    //Anita, la gorda lagartona, no traga la droga latina. es palindroma
+    bool verify = false;
+    do {
+        printf("Ingrese una cadena de texto: ");
+        fgets(word, 100, stdin);
+        verify = isEmptyText(word);
+        if (verify) {
+            printf("-- No puedes dejar vacia la cadena --\n");
+        }
+    } while (verify);
+    word[strcspn(word, "\n")] = '\0';
 
-     fflush(stdin);
+    fflush(stdin);
 
-     printf(" Respuesta: %d \n\n ", isPalindroma(word, strlen(word)));
+    printf("* Respuesta: %d \n\n ", isPalindroma(word, strlen(word)));
 }
 
 void splitStrings() {
     char text[500];
-
-    printf("Ingrese una cadena de texto: ");
-    fgets(text, sizeof(text), stdin);
-    text[strcspn(text, "\n")] = 0;
-
-    char* output = split(text);
+    bool verify = false;
+    do {
+        printf("Ingrese una cadena de texto: ");
+        fgets(text, sizeof(text), stdin);
+        verify = isEmptyText(text);
+        if (verify) {
+            printf("-- No puedes dejar vacia la cadena --\n");
+        }
+    } while (verify);
+    char *output = split(text);
 
     if (output != NULL) {
-        printf("Cadena dividida en caracteres: ");
+        printf("* Cadena dividida en caracteres: ");
         for (int i = 0; i < strlen(text); i++) {
             printf("%c ", output[i]);
         }
@@ -96,62 +174,87 @@ void splitStrings() {
 
         free(output);
     } else {
-        printf("Error de asignación de memoria.\n");
+        printf("* Error de asignación de memoria.\n");
     }
 }
 
-void mainMenu(){
+void mainMenu() {
+    char option;
+    char input[100];
+    char *menu = "<<<<<<<MENU PRINCIPAL>>>>>>\n\n"
+            "1. Buscar la ultima ocurrencia de una subcadena dentro de otra \n\n"
+            "2. Capitalizar una cadena de texto\n\n"
+            "3. Dividir una cadena en un arreglo de caracteres\n\n"
+            "4. Unir arreglo de caracteres en una cadena\n\n"
+            "5. Verificar si una cadena de texto finaliza con otra\n\n"
+            "6. Formatear un valor numerico\n\n"
+            "7. Verificar si una cadena de texto es palindroma\n\n"
+            "8. Validar parentesis\n\n"
+            "X. Salir\n\n"
 
-        char option;
-        char *menu = "<<<<<<<MENU PRINCIPAL>>>>>>\n\n"
-        "1. Buscar la ultima ocurrencia de una subcadena dentro de otra \n\n"
-        "2. Capitalizar una cadena de texto\n\n"
-        "3. Dividir una cadena en un arreglo de caracteres\n\n"
-        "4. Unir arreglo de caracteres en una cadena\n\n"
-        "5. Verificar si una cadena de texto finaliza con otra\n\n"
-        "6. Formatear un valor numerico\n\n"
-        "7. Verificar si una cadena de texto es palindroma\n\n"
-        "8. Validar parentesis\n\n"
-        "X. Salir\n\n"
+            "Digite su Opcion: ";
 
-        "Digite su Opcion: ";
+    do {
+        bool verify = false;
 
-        do{
-            printf( menu);
-            scanf(" %c",&option);
-            fflush(stdin);
-            if (option != 'X') {
-                printf("<<<OPCION %c>>>\n", option);
+        do {
+            printf(menu);
+            fgets(input, sizeof(input), stdin);
+
+            input[strcspn(input, "\n")] = '\0';
+            if (strlen(input) == 0) {
+                printf("-- No puedes dejar vacío --\n");
+                option = '\0';
+                getchar();
+            } else if (strlen(input) > 1) {
+                printf("-- Entrada inválida, solo se permite un carácter --\n");
+                option = '\0';
+                getchar();
+            }else if (isspace((unsigned char)input[0])) {
+                printf("-- Espacio no válido --\n");
+                option = '\0';
+                getchar();
+            } else {
+                option = input[0];
             }
-            switch(option){
-                case '1' : searchSubFfix();
+        } while (option == '\0');  // Continuar si la entrada estaba vacía o era inválida
+
+        fflush(stdin);
+        if (option != 'X') {
+            printf("<<<OPCION %c>>>\n", option);
+        }
+        switch (option) {
+            case '1': searchSubFfix();
                 break;
 
-                case '2' : NULL;
+            case '2': NULL;
                 break;
 
-                case '3' : splitStrings();
+            case '3': splitStrings();
                 break;
 
-                case '4' : NULL;
+            case '4': NULL;
                 break;
 
-                case '5' : endsWithFunction();
+            case '5': endsWithFunction();
                 break;
 
-                case '6' : NULL;
+            case '6': formatValue();
                 break;
 
-                case '7' : palindroma();
+            case '7': palindroma();
                 break;
 
-                case '8' : NULL;
+            case '8': NULL;
                 break;
 
-                case 'X' : printf("Tenga un Buen Dia, Hasta Luego");
+            case 'X': printf("Tenga un Buen Dia, Hasta Luego");
                 break;
-            }
-            getchar();
-        }while( toupper(option) != 'X');
+            case 'x': printf("Tenga un Buen Dia, Hasta Luego");
+                break;
+            default: printf("Opcion Invalida");
+                break;
+        }
+        getchar();
+    } while (toupper(option) != 'X');
 }
-

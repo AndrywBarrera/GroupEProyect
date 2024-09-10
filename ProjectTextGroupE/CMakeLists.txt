@@ -12,6 +12,8 @@ add_executable(VerifyTextString main.c
         splitString.c
         lastMeeting.h
         lastMeeting.c
+        formatNumeric.c
+        formatNumeric.h
 )
 
 add_executable(main main.c
@@ -19,4 +21,5 @@ add_executable(main main.c
         palindroma.c
         splitString.c
         lastMeeting.c
+        formatNumeric.c
 )
