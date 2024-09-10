@@ -217,6 +217,7 @@ void mainMenu() {
             } else {
                 option = input[0];
             }
+            fflush(stdin);
         } while (option == '\0');  // Continuar si la entrada estaba vacía o era inválida
 
         fflush(stdin);
