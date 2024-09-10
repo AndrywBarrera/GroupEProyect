@@ -120,8 +120,9 @@ void mainMenu(){
             printf( menu);
             scanf(" %c",&option);
             fflush(stdin);
-            printf("<<<OPCION %c>>>\n", option);
-
+            if (option != 'X') {
+                printf("<<<OPCION %c>>>\n", option);
+            }
             switch(option){
                 case '1' : searchSubFfix();
                 break;
@@ -145,6 +146,9 @@ void mainMenu(){
                 break;
 
                 case '8' : NULL;
+                break;
+
+                case 'X' : printf("Tenga un Buen Dia, Hasta Luego");
                 break;
             }
             getchar();
