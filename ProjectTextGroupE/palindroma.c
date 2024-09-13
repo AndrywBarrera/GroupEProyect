@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * @brief Verifica si una palabra o frase es pal�ndroma.
+ * Verifica si una palabra o frase es pal�ndroma.
  *
  * Esta funcion limpia la entrada eliminando los espacios, caracteres especiales y
  * luego compara la palabra o frase resultante para verificar si se lee igual en ambos sentidos.

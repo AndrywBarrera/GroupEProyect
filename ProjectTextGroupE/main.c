@@ -8,6 +8,7 @@
 #include "splitString.h"
 #include "lastMeeting.h"
 #include "formatNumeric.h"
+#include "verifyBrackets.h"
 
 void mainMenu();
 
@@ -178,6 +179,25 @@ void splitStrings() {
     }
 }
 
+
+void brackets() {
+
+    char cadena[100];
+
+    printf("Ingrese la expresion con parentesis: ");
+    fgets(cadena, sizeof(cadena), stdin);
+
+
+    if (strlen(cadena) > 0 && cadena[strlen(cadena) - 1] == '\n') {
+        cadena[strlen(cadena) - 1] = '\0';
+    }
+
+    printf("* Respuesta: %d \n\n", (verifyBrackets(cadena)));
+
+
+}
+
+
 void mainMenu() {
     char option;
     char input[100];
@@ -203,15 +223,15 @@ void mainMenu() {
 
             input[strcspn(input, "\n")] = '\0';
             if (strlen(input) == 0) {
-                printf("-- No puedes dejar vacío --\n");
+                printf("-- No puedes dejar vacio --\n");
                 option = '\0';
                 getchar();
             } else if (strlen(input) > 1) {
-                printf("-- Entrada inválida, solo se permite un carácter --\n");
+                printf("-- Entrada invalida, solo se permite un caracter --\n");
                 option = '\0';
                 getchar();
             }else if (isspace((unsigned char)input[0])) {
-                printf("-- Espacio no válido --\n");
+                printf("-- Espacio no valido --\n");
                 option = '\0';
                 getchar();
             } else {
@@ -222,7 +242,7 @@ void mainMenu() {
 
         fflush(stdin);
         if (option != 'X') {
-            printf("<<<OPCION %c>>>\n", option);
+            printf("\n<<<OPCION %c>>>\n\n", option);
         }
         switch (option) {
             case '1': searchSubFfix();
@@ -246,7 +266,7 @@ void mainMenu() {
             case '7': palindroma();
                 break;
 
-            case '8': NULL;
+            case '8': brackets();
                 break;
 
             case 'X': printf("Tenga un Buen Dia, Hasta Luego");
@@ -256,6 +276,6 @@ void mainMenu() {
             default: printf("Opcion Invalida");
                 break;
         }
-        getchar();
+   
     } while (toupper(option) != 'X');
 }
