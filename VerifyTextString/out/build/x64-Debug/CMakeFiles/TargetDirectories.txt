@@ -1,4 +1,0 @@
-C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString/out/build/x64-Debug/CMakeFiles/VerifyTextString.dir
-C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString/out/build/x64-Debug/CMakeFiles/main.dir
-C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/valen/Documents/University/QUINTO SEMESTRE/Programación 3/Ejemplos C/GroupEProyect/VerifyTextString/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

@@ -1,8 +1,0 @@
-{
-  "OutputFoldersPerTargetSystem": {
-    "Local Machine": [
-      "VerifyTextString\\out\\build\\x64-Debug",
-      "VerifyTextString\\out\\install\\x64-Debug"
-    ]
-  }
-}

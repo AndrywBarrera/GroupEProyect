@@ -1,4 +1,0 @@
-C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/VerifyTextString.dir
-C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/main.dir
-C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Juan Leon/CLionProjects/GroupEProyect/VerifyTextString/cmake-build-debug/CMakeFiles/rebuild_cache.dir
