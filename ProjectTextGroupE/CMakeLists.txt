@@ -3,7 +3,7 @@ project(VerifyTextString C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(VerifyTextString main.c
+add_executable(ProjectTextGroupE main.c
         endswith.c
         palindroma.c
         endswith.h
@@ -14,7 +14,7 @@ add_executable(VerifyTextString main.c
         lastMeeting.c
         formatNumeric.c
         formatNumeric.h
-)
+ "verifyBrackets.h" "verifyBrackets.c")
 
 add_executable(main main.c
         endswith.c
@@ -22,4 +22,4 @@ add_executable(main main.c
         splitString.c
         lastMeeting.c
         formatNumeric.c
-)
+ "verifyBrackets.h" "verifyBrackets.c")
