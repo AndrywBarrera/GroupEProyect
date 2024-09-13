@@ -1,26 +1,27 @@
 #include "verifyBrackets.h"
+#include <string.h>
 
 bool verifyBrackets(char word[100]){
-	int cont = 0;  // Contador para los paréntesis '()'
+	int cont = 0;  // Contador para los parï¿½ntesis '()'
 
-	for (int i = 0; i < strlen(word); i++) {  // Bucle con condición correcta
+	for (int i = 0; i < strlen(word); i++) {  // Bucle con condiciï¿½n correcta
 		char ch = word[i];
-		// Verificar paréntesis
+		// Verificar parï¿½ntesis
 		if (ch == '(') {
 			cont++;
 		}
 		else if (ch == ')') {
 			cont--;
 			if (cont < 0) {
-				return false;  // Hay más paréntesis de cierre que de apertura
+				return false;  // Hay mï¿½s parï¿½ntesis de cierre que de apertura
 			}
 		}
 	}
-	// Verificación al final, después de procesar toda la cadena
+	// Verificaciï¿½n al final, despuï¿½s de procesar toda la cadena
 	if (cont == 0) {
-		return true;  // Los paréntesis están balanceados
+		return true;  // Los parï¿½ntesis estï¿½n balanceados
 	}
 	else {
-		return false;  // Hay más paréntesis de apertura que de cierre
+		return false;  // Hay mï¿½s parï¿½ntesis de apertura que de cierre
 	}
 }

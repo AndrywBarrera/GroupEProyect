@@ -14,7 +14,7 @@ add_executable(ProjectTextGroupE main.c
         lastMeeting.c
         formatNumeric.c
         formatNumeric.h
- "verifyBrackets.h" "verifyBrackets.c")
+        verifyBrackets.h verifyBrackets.c)
 
 add_executable(main main.c
         endswith.c
@@ -22,4 +22,4 @@ add_executable(main main.c
         splitString.c
         lastMeeting.c
         formatNumeric.c
- "verifyBrackets.h" "verifyBrackets.c")
+        verifyBrackets.c)

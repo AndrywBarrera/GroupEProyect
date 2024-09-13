@@ -181,20 +181,23 @@ void splitStrings() {
 
 
 void brackets() {
-
     char cadena[100];
-
-    printf("Ingrese la expresion con parentesis: ");
-    fgets(cadena, sizeof(cadena), stdin);
-
+    bool verify = false;
+    do {
+        printf("Ingrese la expresion con parentesis: ");
+        fgets(cadena, sizeof(cadena), stdin);
+        verify = isEmptyText(cadena);
+        if (verify) {
+            printf("-- No puedes dejar vacia la cadena --\n");
+        }
+    } while (verify);
 
     if (strlen(cadena) > 0 && cadena[strlen(cadena) - 1] == '\n') {
         cadena[strlen(cadena) - 1] = '\0';
     }
 
     printf("* Respuesta: %d \n\n", (verifyBrackets(cadena)));
-
-
+    getchar();
 }
 
 
@@ -230,7 +233,7 @@ void mainMenu() {
                 printf("-- Entrada invalida, solo se permite un caracter --\n");
                 option = '\0';
                 getchar();
-            }else if (isspace((unsigned char)input[0])) {
+            } else if (isspace((unsigned char) input[0])) {
                 printf("-- Espacio no valido --\n");
                 option = '\0';
                 getchar();
@@ -238,7 +241,7 @@ void mainMenu() {
                 option = input[0];
             }
             fflush(stdin);
-        } while (option == '\0');  // Continuar si la entrada estaba vacía o era inválida
+        } while (option == '\0'); // Continuar si la entrada estaba vacía o era inválida
 
         fflush(stdin);
         if (option != 'X') {
@@ -276,6 +279,5 @@ void mainMenu() {
             default: printf("Opcion Invalida");
                 break;
         }
-   
     } while (toupper(option) != 'X');
 }
