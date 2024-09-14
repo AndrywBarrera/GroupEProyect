@@ -4,11 +4,8 @@
 
 #ifndef JOINSTRING_H
 #define JOINSTRING_H
-#include <string.h>
-#include <stdlib.h>
-
 
 // Define a function to join strings with a separator in C.
-char* unirCaracteres(char* arr, char separador);
+char* unirCaracteres(const char* array, char separator);
 
 #endif //JOINSTRING_H
