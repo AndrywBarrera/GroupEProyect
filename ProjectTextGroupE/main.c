@@ -200,6 +200,31 @@ void splitStrings() {
     }
 }
 
+void joinStrings(){
+    std::vector<std::string> palabras;
+    std::string palabra;
+    char separador;
+    int numeroPalabras;
+
+    // Pidiendo el número de palabras
+    std::cout << "Ingrese el número de palabras: ";
+    std::cin >> numeroPalabras;
+    std::cin.ignore();  // Limpia el buffer de entrada
+
+    std::cout << "Ingrese las palabras:\n";
+    for (int i = 0; i < numeroPalabras; ++i) {
+        std::getline(std::cin, palabra);
+        palabras.push_back(palabra);
+    }
+
+    // Pidiendo el separador
+    std::cout << "Ingrese el caracter separador: ";
+    std::cin >> separador;
+
+    // Unir las palabras con el separador elegido
+    std::string cadenaUnida = unirCaracteres(palabras, separador);
+    std::cout << "Cadena unida: " << cadenaUnida << std::endl;
+}
 
 void brackets() {
     char cadena[100];
@@ -278,7 +303,7 @@ void mainMenu() {
             case '3': splitStrings();
                 break;
 
-            case '4': NULL;
+            case '4': joinStrings();
                 break;
 
             case '5': endsWithFunction();
