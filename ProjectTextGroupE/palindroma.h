@@ -5,6 +5,6 @@
 #include <ctype.h>
 
 
-bool isPalindroma(char[100] , int);
+bool isPalindroma(char[100]);
 
 #endif
