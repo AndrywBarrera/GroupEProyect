@@ -17,6 +17,36 @@ int main() {
     return 0;
 }
 
+void capitalizeString(char *cadena) {
+    int len = strlen(cadena);
+    int inicioPalabra = 1;
+
+    for (int i = 0; i < len; i++) {
+        if (inicioPalabra && isalpha(cadena[i])) {
+            if (i + 1 < len && cadena[i + 1] != ' ' && cadena[i + 1] != '\0') {
+                cadena[i] = toupper(cadena[i]);
+            }
+            inicioPalabra = 0;
+        }
+        else if (cadena[i] == ' ') {
+            inicioPalabra = 1;
+        }
+    }
+}
+
+void inCapitalizeTextstring() {
+    char cadena[200];
+
+    printf("Introduce una cadena de texto: ");
+    fgets(cadena, 200, stdin);
+
+    cadena[strcspn(cadena, "\n")] = 0;
+
+    capitalizeString(cadena);
+
+    printf("Cadena capitalizada: %s\n", cadena);
+}
+
 bool isNumericValidated(const char *cadena) {
     char *endptr;
     strtod(cadena, &endptr);
@@ -251,7 +281,7 @@ void mainMenu() {
             case '1': searchSubFfix();
                 break;
 
-            case '2': NULL;
+            case '2': inCapitalizeTextstring();
                 break;
 
             case '3': splitStrings();
