@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="VerifyTextString" targetName="main" />
+      <config projectName="VerifyTextString" targetName="VerifyTextString" />
+      <config projectName="VerifyTextString" targetName="ProjectTextGroupE" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d6fcc14-acb7-482a-b4d3-5cfeb6ac8542" name="Changes" comment="Correccion de errores" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AndrywBarrera/GroupEProyect.git&quot;,
+    &quot;accountId&quot;: &quot;77aa9132-d39b-4e3b-800d-974c0c872e08&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CapitalizeTextstring.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CapitalizeTextstring.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2lelPlvNlFkOyeKUZITa83vyWXb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.main.executor": "Run",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "feature/JoinString",
+    "last_opened_file_path": "C:/Users/andry/CLionProjects/GroupEProyect/ProjectTextGroupE",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="CMake Application.main" />
+        <item itemvalue="CMake Application.main" />
+        <item itemvalue="CMake Application.main" />
+        <item itemvalue="CMake Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d6fcc14-acb7-482a-b4d3-5cfeb6ac8542" name="Changes" comment="" />
+      <created>1725548401190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725548401190</updated>
+      <workItem from="1725548402362" duration="6066000" />
+      <workItem from="1725657867493" duration="87000" />
+      <workItem from="1725894789398" duration="291000" />
+      <workItem from="1725898777024" duration="15000" />
+      <workItem from="1725898927020" duration="1707000" />
+      <workItem from="1725993563267" duration="1436000" />
+      <workItem from="1725995071301" duration="8835000" />
+      <workItem from="1726012474881" duration="604000" />
+      <workItem from="1726067484543" duration="77000" />
+      <workItem from="1726176613214" duration="674000" />
+      <workItem from="1726264772770" duration="2741000" />
+      <workItem from="1726197045911" duration="236000" />
+      <workItem from="1726278795042" duration="732000" />
+      <workItem from="1726329618989" duration="1190000" />
+    </task>
+    <task id="LOCAL-00001" summary="Merge corrected">
+      <option name="closed" value="true" />
+      <created>1725548503624</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725548503624</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge corrected">
+      <option name="closed" value="true" />
+      <created>1725548515088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725548515088</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Correccion de metodos y menu">
+      <option name="closed" value="true" />
+      <created>1725900575391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725900575391</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Correccion de metodo lastMeeting">
+      <option name="closed" value="true" />
+      <created>1725995769360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725995769360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Correccion de metodo lastMeeting">
+      <option name="closed" value="true" />
+      <created>1725996198363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725996198363</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Correccion de error interfaz">
+      <option name="closed" value="true" />
+      <created>1725996256512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725996256512</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Nueva Rama, Codigo de FormatNumeric y correpcion de entradas y errores.">
+      <option name="closed" value="true" />
+      <created>1726002084297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726002084297</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Correccion de errorer de endswith.c &quot;Encargado Andryw&quot;">
+      <option name="closed" value="true" />
+      <created>1726009743458</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726009743458</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Correccion del CMakeLists.txt y añadiendo verificacion de entradas en el main de verifyBrackets.c">
+      <option name="closed" value="true" />
+      <created>1726265430520</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726265430520</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Correccion de errores">
+      <option name="closed" value="true" />
+      <created>1726330508921</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726330508921</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dev" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge corrected" />
+    <MESSAGE value="Correccion de metodos y menu" />
+    <MESSAGE value="Correccion de metodo lastMeeting" />
+    <MESSAGE value="Correccion de error interfaz" />
+    <MESSAGE value="Nueva Rama, Codigo de FormatNumeric y correpcion de entradas y errores." />
+    <MESSAGE value="Correccion de errorer de endswith.c &quot;Encargado Andryw&quot;" />
+    <MESSAGE value="Correccion del CMakeLists.txt y añadiendo verificacion de entradas en el main de verifyBrackets.c" />
+    <MESSAGE value="Correccion de errores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion de errores" />
+  </component>
+</project>

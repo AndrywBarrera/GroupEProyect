@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <joinString.h"
 #include "endswith.h"
 #include "palindroma.h"
 #include "splitString.h"
@@ -264,8 +264,6 @@ void mainMenu() {
             "Digite su Opcion: ";
 
     do {
-        bool verify = false;
-
         do {
             printf(menu);
             fgets(input, sizeof(input), stdin);
