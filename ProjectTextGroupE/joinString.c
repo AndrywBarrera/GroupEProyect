@@ -3,18 +3,20 @@
 //
 
 #include "joinString.h"
-#include <iostream>
-#include <vector>
-#include <string>
+#define JOINSTRING_H
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-// Función para unir un arreglo de caracteres en una cadena usando un separador
-std::string unirCaracteres(const std::vector<std::string>& arr, char separador) {
-    std::string resultado;
-    if (!arr.empty()) {
-        resultado += arr[0];  // Agregar el primer elemento sin el separador al inicio
-        for (size_t i = 1; i < arr.size(); ++i) {
-            resultado += separador + arr[i];  // Agregar los siguientes elementos con el separador
-        }
+void unirCaracteres(char **palabras, int numeroPalabras, char *resultado, char separador) {
+    if (numeroPalabras == 0) return;
+
+    strcpy(resultado, palabras[0]);  // Inicia con la primera palabra
+
+    for (int i = 1; i < numeroPalabras; i++) {
+        int len = strlen(resultado);
+        resultado[len] = separador;  // Añadir el separador
+        resultado[len + 1] = '\0';   // Terminar la cadena
+        strcat(resultado, palabras[i]);  // Añadir la siguiente palabra
     }
-    return resultado;
 }

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <joinString.h"
 #include "endswith.h"
 #include "palindroma.h"
 #include "splitString.h"
@@ -201,29 +201,37 @@ void splitStrings() {
 }
 
 void joinStrings(){
-    std::vector<std::string> palabras;
-    std::string palabra;
-    char separador;
     int numeroPalabras;
+    char separador;
+    char **palabras;
+    char resultado[1000] = {0};
 
-    // Pidiendo el número de palabras
-    std::cout << "Ingrese el número de palabras: ";
-    std::cin >> numeroPalabras;
-    std::cin.ignore();  // Limpia el buffer de entrada
+    printf("Ingrese el número de palabras: ");
+    scanf("%d", &numeroPalabras);
+    getchar();
 
-    std::cout << "Ingrese las palabras:\n";
-    for (int i = 0; i < numeroPalabras; ++i) {
-        std::getline(std::cin, palabra);
-        palabras.push_back(palabra);
+    palabras = (char **)malloc(numeroPalabras * sizeof(char *));
+    for (int i = 0; i < numeroPalabras; i++) {
+        palabras[i] = (char *)malloc(100 * sizeof(char));
     }
 
-    // Pidiendo el separador
-    std::cout << "Ingrese el caracter separador: ";
-    std::cin >> separador;
+    printf("Ingrese las palabras:\n");
+    for (int i = 0; i < numeroPalabras; i++) {
+        fgets(palabras[i], 100, stdin);
+        palabras[i][strcspn(palabras[i], "\n")] = 0;
+    }
 
-    // Unir las palabras con el separador elegido
-    std::string cadenaUnida = unirCaracteres(palabras, separador);
-    std::cout << "Cadena unida: " << cadenaUnida << std::endl;
+    printf("Ingrese el caracter separador: ");
+    scanf("%c", &separador);
+
+    unirCaracteres(palabras, numeroPalabras, resultado, separador);
+    printf("Cadena unida: %s\n", resultado);
+
+    for (int i = 0; i < numeroPalabras; i++) {
+        free(palabras[i]);
+    }
+    free(palabras);
+
 }
 
 void brackets() {

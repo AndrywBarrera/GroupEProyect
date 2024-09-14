@@ -3,8 +3,6 @@
 //
 
 #ifndef JOINSTRING_H
-#define JOINSTRING_H
-#include <string>
 #endif //JOINSTRING_H
 
-std::string unirCaracteres(const std::vector<std::string>& arr, char separador);
+void unirCaracteres(char **palabras, int numeroPalabras, char *resultado, char separador);
