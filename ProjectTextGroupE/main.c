@@ -171,7 +171,7 @@ void palindroma() {
 
     fflush(stdin);
 
-    printf("* Respuesta: %d \n\n ", isPalindroma(word, strlen(word)));
+    printf("* Respuesta: %d \n\n ", isPalindroma(word));
 }
 
 void splitStrings() {
