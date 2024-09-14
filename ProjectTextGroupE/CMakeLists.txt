@@ -17,13 +17,16 @@ add_executable(ProjectTextGroupE main.c
         verifyBrackets.h
         verifyBrackets.c
         CapitalizeTextstring.h
-        CapitalizeTextstring.c)
+        CapitalizeTextstring.c
+        joinString.c
+        joinString.h)
 
 add_executable(main main.c
         endswith.c
         palindroma.c
         splitString.c
-        lastMeeting.c
+        lastMeeting.cs
         formatNumeric.c
         verifyBrackets.c
-        CapitalizeTextstring.c)
+        CapitalizeTextstring.c
+        joinString.c)
