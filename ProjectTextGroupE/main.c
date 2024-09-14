@@ -10,6 +10,8 @@
 #include "formatNumeric.h"
 #include "verifyBrackets.h"
 #include "CapitalizeTextstring.h"
+#include "joinString.h"
+
 
 void mainMenu();
 
@@ -200,31 +202,29 @@ void splitStrings() {
     }
 }
 
-void joinStrings(){
-    std::vector<std::string> palabras;
-    std::string palabra;
+void joinStrings() {
+    char cadena[100];  // Arreglo para almacenar la cadena ingresada por el usuario
     char separador;
-    int numeroPalabras;
 
-    // Pidiendo el número de palabras
-    std::cout << "Ingrese el número de palabras: ";
-    std::cin >> numeroPalabras;
-    std::cin.ignore();  // Limpia el buffer de entrada
-
-    std::cout << "Ingrese las palabras:\n";
-    for (int i = 0; i < numeroPalabras; ++i) {
-        std::getline(std::cin, palabra);
-        palabras.push_back(palabra);
-    }
+    // Pidiendo la cadena de texto
+    printf("Ingrese una cadena de texto: ");
+    fgets(cadena, sizeof(cadena), stdin);
+    // Eliminar el salto de línea que agrega fgets
+    cadena[strcspn(cadena, "\n")] = '\0';
 
     // Pidiendo el separador
-    std::cout << "Ingrese el caracter separador: ";
-    std::cin >> separador;
+    printf("Ingrese el caracter separador: ");
+    scanf(" %c", &separador);
 
-    // Unir las palabras con el separador elegido
-    std::string cadenaUnida = unirCaracteres(palabras, separador);
-    std::cout << "Cadena unida: " << cadenaUnida << std::endl;
+    // Llamar al método unirChars con la cadena ingresada y el separador
+    char* resultado = unirCaracteres(cadena, separador);
+
+    // Mostrar la cadena unida
+    printf("Cadena separada: %s\n", resultado);
+
+  
 }
+
 
 void brackets() {
     char cadena[100];
@@ -243,7 +243,7 @@ void brackets() {
     }
 
     printf("* Respuesta: %d \n\n", (verifyBrackets(cadena)));
-    getchar();
+ 
 }
 
 

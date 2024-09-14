@@ -4,7 +4,11 @@
 
 #ifndef JOINSTRING_H
 #define JOINSTRING_H
-#include <string>
-#endif //JOINSTRING_H
+#include <string.h>
+#include <stdlib.h>
 
-std::string unirCaracteres(const std::vector<std::string>& arr, char separador);
+
+// Define a function to join strings with a separator in C.
+char* unirCaracteres(char* arr, char separador);
+
+#endif //JOINSTRING_H

@@ -25,7 +25,7 @@ add_executable(main main.c
         endswith.c
         palindroma.c
         splitString.c
-        lastMeeting.cs
+        lastMeeting.c
         formatNumeric.c
         verifyBrackets.c
         CapitalizeTextstring.c
