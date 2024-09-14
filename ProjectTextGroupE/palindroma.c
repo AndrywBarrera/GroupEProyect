@@ -8,7 +8,6 @@
  * luego compara la palabra o frase resultante para verificar si se lee igual en ambos sentidos.
  *
  * @param word La palabra o frase a verificar.
- * @param size El tama�o de la palabra o frase (n�mero de caracteres).
  * @return true Si la palabra o frase es pal�ndroma.
  * @return false Si la palabra o frase no es pal�ndroma.
  */

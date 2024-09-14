@@ -1,6 +1,18 @@
 #include "verifyBrackets.h"
 #include <string.h>
 
+/**
+ * Verifica si los parentesis abiertos coinciden con los de salida
+ *
+ * Esta funcion  verifica que los parentesis "(" tengo el respectivo de cierre ")" leyendo todo el arreglo de caracteres
+ *y luego guardando en un contador los de abertura "(", y encuentra  de cierre ")" restara uno a ese conatdor, por ende
+ * si cont=0 se cumple el balance de parentesis de ser !=0 no se cumple el balance
+ * 
+ * @param word La palabra o arreglo de caracteres a validar.
+ * @return true Si los parentesis estan balanceados.
+ * @return false Si los parentesis no estan balanceados.
+ */
+
 bool verifyBrackets(char word[100]){
 	int cont = 0;  // Contador para los par�ntesis '()'
 
