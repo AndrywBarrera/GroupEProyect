@@ -9,42 +9,13 @@
 #include "lastMeeting.h"
 #include "formatNumeric.h"
 #include "verifyBrackets.h"
+#include "CapitalizeTextstring.h"
 
 void mainMenu();
 
 int main() {
     mainMenu();
     return 0;
-}
-
-void capitalizeString(char *cadena) {
-    int len = strlen(cadena);
-    int inicioPalabra = 1;
-
-    for (int i = 0; i < len; i++) {
-        if (inicioPalabra && isalpha(cadena[i])) {
-            if (i + 1 < len && cadena[i + 1] != ' ' && cadena[i + 1] != '\0') {
-                cadena[i] = toupper(cadena[i]);
-            }
-            inicioPalabra = 0;
-        }
-        else if (cadena[i] == ' ') {
-            inicioPalabra = 1;
-        }
-    }
-}
-
-void inCapitalizeTextstring() {
-    char cadena[200];
-
-    printf("Introduce una cadena de texto: ");
-    fgets(cadena, 200, stdin);
-
-    cadena[strcspn(cadena, "\n")] = 0;
-
-    capitalizeString(cadena);
-
-    printf("Cadena capitalizada: %s\n", cadena);
 }
 
 bool isNumericValidated(const char *cadena) {
@@ -63,6 +34,26 @@ bool isEmptyText(const char *cadena) {
         cadena++;
     }
     return true;
+}
+
+void inCapitalizeTextstring() {
+    char cadena[200];
+    bool verify = false;
+    do {
+        printf("Introduce una cadena de texto: ");
+        fgets(cadena, 200, stdin);
+        verify = isEmptyText(cadena);
+        if (verify) {
+            printf("-- No puedes dejar vacia la cadena --\n");
+        }
+    } while (verify);
+
+    cadena[strcspn(cadena, "\n")] = 0;
+
+    capitalizeString(cadena);
+
+    printf("Cadena capitalizada: %s\n", cadena);
+    getchar();
 }
 
 void searchSubFfix() {
