@@ -239,8 +239,6 @@ void mainMenu() {
             "Digite su Opcion: ";
 
     do {
-        bool verify = false;
-
         do {
             printf(menu);
             fgets(input, sizeof(input), stdin);
