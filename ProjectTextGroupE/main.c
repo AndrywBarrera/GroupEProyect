@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <joinString.h"
 #include "endswith.h"
 #include "palindroma.h"
 #include "splitString.h"
@@ -220,7 +219,7 @@ void joinStrings() {
     char* resultado = unirCaracteres(cadena, separador);
 
     // Mostrar la cadena unida
-    printf("Cadena separada: %s\n", resultado);
+    printf("Cadena separada: %s\n\n", resultado);
 
   
 }
