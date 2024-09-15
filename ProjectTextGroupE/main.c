@@ -19,19 +19,30 @@ int main() {
     return 0;
 }
 
+void menssageEnd() {
+    printf("Presione Enter para continuar.");
+}
+
 void clearWord(char *word) {
     memset(word, 0, sizeof(word));
 };
 bool isNumericValidated(const char *cadena) {
-    char *endptr;
-    char modCadena[256];
-    clearWord(modCadena);
-    strncpy(modCadena, cadena, sizeof(modCadena) - 1);
-    modCadena[sizeof(modCadena) - 1] = '\0';  // Asegurar terminador nulo
+    bool hasDecimalPoint = false;
 
-    strtod(modCadena, &endptr);
-    // Verifica si se produjo una conversión completa y si no hay caracteres no numéricos
-    return *endptr == '\0' && endptr != modCadena;
+    if (*cadena == '\0') return false;
+
+    if (*cadena == '.') return false;
+
+    while (*cadena) {
+        if (*cadena == '.') {
+            if (hasDecimalPoint) return false;
+            hasDecimalPoint = true;
+        } else if (!isdigit((unsigned char) *cadena)) {
+            return false;
+        }
+        cadena++;
+    }
+    return true;
 }
 
 bool isEmptyText(const char *cadena) {
@@ -62,6 +73,9 @@ void inCapitalizeTextstring() {
     capitalizeString(cadena);
 
     printf("Cadena capitalizada: %s\n", cadena);
+
+    menssageEnd();
+    fflush(stdin);
     getchar();
 }
 
@@ -97,6 +111,8 @@ void searchSubFfix() {
     } else {
         printf("* La subcadena no se encuentra en la cadena.\n");
     }
+    menssageEnd();
+    fflush(stdin);
     getchar();
 }
 
@@ -132,6 +148,9 @@ void endsWithFunction() {
     suffix[strcspn(suffix, "\n")] = '\0';
     int result = endsWith(str, suffix);
     printf("* Resultado: %d\n\n", result);
+    menssageEnd();
+    getchar();
+    fflush(stdin);
 }
 
 void formatValue() {
@@ -147,7 +166,7 @@ void formatValue() {
         bool verify = false;
         do {
             //Cadena
-            printf("Ingrese un valor numérico: ");
+            printf("Ingrese un valor numerico: ");
             //Entrada estandar de Usuario, cadena del apuntador
             //Tiene su tamaño predefinido
             fgets(str, sizeof(str), stdin);
@@ -159,8 +178,8 @@ void formatValue() {
         str[strcspn(str, "\n")] = '\0';
         fflush(stdin);
         for (int i = 0; str[i] != '\0'; i++) {
-            if (str[i] == '.') {
-                str[i] = ',';
+            if (str[i] == ',') {
+                str[i] = '.';
             }
         }
         isNumeric = isNumericValidated(str);
@@ -169,11 +188,14 @@ void formatValue() {
             sscanf(str, "%lf", &valor);
             formatValor(valor, resultado);
             printf("* Valor formateado: %s\n", resultado);
-            getchar();
         } else {
             printf("Entrada invalida. Asegurate de ingresar un numero.\n");
         }
     } while (!isNumeric);
+
+    menssageEnd();
+    getchar();
+    fflush(stdin);
 }
 
 void palindroma() {
@@ -192,9 +214,11 @@ void palindroma() {
     } while (verify);
     word[strcspn(word, "\n")] = '\0';
 
-    fflush(stdin);
-    getchar();
+
     printf("* Respuesta: %d \n\n ", isPalindroma(word));
+    menssageEnd();
+    getchar();
+    fflush(stdin);
 }
 
 void splitStrings() {
@@ -222,30 +246,47 @@ void splitStrings() {
     } else {
         printf("* Error de asignación de memoria.\n");
     }
+    menssageEnd();
+    getchar();
+    fflush(stdin);
 }
 
 void joinStrings() {
-    char cadena[100];  // Arreglo para almacenar la cadena ingresada por el usuario
+    char cadena[100]; // Arreglo para almacenar la cadena ingresada por el usuario
     char separador;
     clearWord(cadena);
     separador = '\0';
+    bool verify = false;
     // Pidiendo la cadena de texto
-    printf("Ingrese una cadena de texto: ");
-    fgets(cadena, sizeof(cadena), stdin);
+    do {
+        printf("Ingrese una cadena de texto: ");
+        fgets(cadena, sizeof(cadena), stdin);
+        verify = isEmptyText(cadena);
+        if (verify) {
+            printf("-- No puedes dejar vacia la cadena --\n");
+        }
+    } while (verify);
+
     // Eliminar el salto de línea que agrega fgets
     cadena[strcspn(cadena, "\n")] = '\0';
-
-    // Pidiendo el separador
-    printf("Ingrese el caracter separador: ");
-    scanf(" %c", &separador);
+    do {
+        // Pidiendo el separador
+        printf("Ingrese el caracter separador: ");
+        scanf(" %c", &separador);
+        // Verificar si el usuario no ingresó ningún carácter
+        if (separador == '\n') {
+            printf("No puedes dejar vacío el separador. Inténtalo de nuevo.\n");
+        }
+    } while (separador == '\n');
 
     // Llamar al método unirChars con la cadena ingresada y el separador
-    char* resultado = unirCaracteres(cadena, separador);
+    char *resultado = unirCaracteres(cadena, separador);
 
     // Mostrar la cadena unida
     printf("Cadena separada: %s\n\n", resultado);
-
-
+    menssageEnd();
+    getchar();
+    fflush(stdin);
 }
 
 
@@ -267,7 +308,9 @@ void brackets() {
     }
 
     printf("* Respuesta: %d \n\n", (verifyBrackets(cadena)));
+    menssageEnd();
     getchar();
+    fflush(stdin);
 }
 
 

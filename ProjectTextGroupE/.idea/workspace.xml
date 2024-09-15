@@ -27,7 +27,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8d6fcc14-acb7-482a-b4d3-5cfeb6ac8542" name="Changes" comment="Correccion de errores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapitalizeTextstring.c" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalizeTextstring.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endswith.c" beforeDir="false" afterPath="$PROJECT_DIR$/endswith.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/joinString.c" beforeDir="false" afterPath="$PROJECT_DIR$/joinString.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lastMeeting.c" beforeDir="false" afterPath="$PROJECT_DIR$/lastMeeting.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/splitString.c" beforeDir="false" afterPath="$PROJECT_DIR$/splitString.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "feat/correccion",
     "last_opened_file_path": "C:/Users/andry/CLionProjects/GroupEProyect/ProjectTextGroupE/CMakeLists.txt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

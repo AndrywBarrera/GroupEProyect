@@ -6,6 +6,16 @@
 #include <string.h>
 #include <ctype.h>
 
+/**
+* Capitalizar una cadena.
+*
+* Esta función recibe una candena cualquiera y la capitaliza con lo exacto de poner las primeras
+* letras de cada palabra en mayuscula y poner en minuscula alguna que otra.
+*
+* @param str La palabra o frase a capitalizar.
+* @return nothing
+*/
+
 void capitalizeString(char *str) {
     int len = strlen(str);
     int newWord = 1;

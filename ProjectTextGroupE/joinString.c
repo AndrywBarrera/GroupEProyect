@@ -8,7 +8,17 @@
 #include <stdlib.h>
 
 
-// Función para unir un arreglo de caracteres en una cadena usando un separador
+/**
+* Función para unir un arreglo de caracteres en una cadena usando un separador
+*
+* Esta función recibe un arreglo de caracteres y luego un separador a partir de eso
+* une el arreglo de caracteres identificado por el separador seleccionado.
+*
+* @param array Arreglo de caracteres.
+* @param separator Separador para la frase.
+* @return result que devuelve el arreglo con los separadores y arreglo de caracteres unido.
+*/
+
 char* unirCaracteres(const char* array, char separator) {
     int size = strlen(array);
     char* result = (char*)malloc((size * 2) * sizeof(char) + 1);
