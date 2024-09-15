@@ -82,7 +82,7 @@ void searchSubFfix() {
     int resultado = searchLastMeeting(cadena, subcadena);
 
     if (resultado != 0) {
-        printf("* La subcadena comienza en la posición: %d\n", resultado);
+        printf("* La subcadena comienza en la posicion: %d\n", resultado);
     } else {
         printf("* La subcadena no se encuentra en la cadena.\n");
     }
@@ -148,7 +148,7 @@ void formatValue() {
             formatValor(valor, resultado);
             printf("* Valor formateado: %s\n", resultado);
         } else {
-            printf("Entrada inválida. Asegúrate de ingresar un número.\n");
+            printf("Entrada inválida. Asegúrate de ingresar un numero.\n");
         }
     } while (!isNumeric);
 }
@@ -196,7 +196,7 @@ void splitStrings() {
 
         free(output);
     } else {
-        printf("* Error de asignación de memoria.\n");
+        printf("* Error de asignacion de memoria.\n");
     }
 }
 
