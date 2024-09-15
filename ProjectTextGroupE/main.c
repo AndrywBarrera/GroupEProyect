@@ -200,6 +200,28 @@ void splitStrings() {
     }
 }
 
+void joinStrings() {
+    char cadena[100];  // Arreglo para almacenar la cadena ingresada por el usuario
+    char separador;
+
+    // Pidiendo la cadena de texto
+    printf("Ingrese una cadena de texto: ");
+    fgets(cadena, sizeof(cadena), stdin);
+    // Eliminar el salto de línea que agrega fgets
+    cadena[strcspn(cadena, "\n")] = '\0';
+
+    // Pidiendo el separador
+    printf("Ingrese el caracter separador: ");
+    scanf(" %c", &separador);
+
+    // Llamar al método unirChars con la cadena ingresada y el separador
+    char* resultado = unirCaracteres(cadena, separador);
+
+    // Mostrar la cadena unida
+    printf("Cadena separada: %s\n\n", resultado);
+
+
+}
 
 void brackets() {
     char cadena[100];
@@ -276,7 +298,7 @@ void mainMenu() {
             case '3': splitStrings();
                 break;
 
-            case '4': NULL;
+            case '4': void joinStrings();
                 break;
 
             case '5': endsWithFunction();
