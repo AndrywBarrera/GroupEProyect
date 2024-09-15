@@ -336,18 +336,18 @@ void mainMenu() {
         do {
             printf(menu);
             fgets(input, sizeof(input), stdin);
-
+            fflush(stdin);
             input[strcspn(input, "\n")] = '\0';
             if (strlen(input) == 0) {
-                printf("-- No puedes dejar vacio --\n");
+                printf("\n-- No puedes dejar vacio --\n");
                 option = '\0';
                 getchar();
             } else if (strlen(input) > 1) {
-                printf("-- Entrada invalida, solo se permite un caracter --\n");
+                printf("\n-- Entrada invalida, solo se permite un caracter --\n");
                 option = '\0';
                 getchar();
             } else if (isspace((unsigned char) input[0])) {
-                printf("-- Espacio no valido --\n");
+                printf("\n-- Espacio no valido --\n");
                 option = '\0';
                 getchar();
             } else {

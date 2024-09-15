@@ -25,14 +25,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d6fcc14-acb7-482a-b4d3-5cfeb6ac8542" name="Changes" comment="Correccion de errores">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapitalizeTextstring.c" beforeDir="false" afterPath="$PROJECT_DIR$/CapitalizeTextstring.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/endswith.c" beforeDir="false" afterPath="$PROJECT_DIR$/endswith.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/joinString.c" beforeDir="false" afterPath="$PROJECT_DIR$/joinString.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lastMeeting.c" beforeDir="false" afterPath="$PROJECT_DIR$/lastMeeting.c" afterDir="false" />
+    <list default="true" id="8d6fcc14-acb7-482a-b4d3-5cfeb6ac8542" name="Changes" comment="Correccion de errores y documentacion de los metodos">
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/splitString.c" beforeDir="false" afterPath="$PROJECT_DIR$/splitString.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726415947314</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Correccion de errores y documentacion de los metodos">
+      <option name="closed" value="true" />
+      <created>1726422235685</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1726422235685</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +288,7 @@
     <MESSAGE value="Correccion de errorer de endswith.c &quot;Encargado Andryw&quot;" />
     <MESSAGE value="Correccion del CMakeLists.txt y añadiendo verificacion de entradas en el main de verifyBrackets.c" />
     <MESSAGE value="Correccion de errores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correccion de errores" />
+    <MESSAGE value="Correccion de errores y documentacion de los metodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion de errores y documentacion de los metodos" />
   </component>
 </project>
