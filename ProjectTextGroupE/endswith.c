@@ -3,6 +3,19 @@
 #include <ctype.h>
 #include <stdio.h>
 
+/**
+* Verifica si una palabra o frase termina con una palabra concreta.
+*
+* Esta función elimina los espacios a lo último de la cadena o frase y compara si la última
+* palabra es igual a la subcadena que llega.
+*
+* @param str La palabra o frase a verificar.
+* @param suffix La palabra a comparar si está al final.
+* @return true Si la subcadena está al final de la palabra o frase.
+* @return false Si la subcadena no está al final de la palabra o frase.
+*/
+
+
 int endsWith(char *str, char *suffix) {
     size_t strLen = strlen(str); //Longitud Cadena
     size_t suffixLen = strlen(suffix); //Longitud SubCadena
