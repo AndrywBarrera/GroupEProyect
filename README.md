@@ -18,3 +18,7 @@ Para el desarrollo de este proyetco se han empleado las siguentes:
 - Andryw Barrera
 - Estefania Rojas
 - Valentina Vega 
+
+ ## RECOMENDACIÓN
+
+Abrir el proyecto desde la carpeta ProjectTextGroupE para que ejecute correctamente

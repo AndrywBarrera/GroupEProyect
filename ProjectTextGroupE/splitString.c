@@ -7,6 +7,16 @@
 #include <string.h>
 #include "splitString.h"
 
+
+/**
+* Función para dividir una cadena en un arreglo de caracteres.
+*
+* Esta función recibe una cadena y a partir de eso la divide en un arreglo de caracteres
+* en sí retorna el arreglo de caracteres ya diferenciado.
+*
+* @param cadena Cadena a examinar.
+* @return arreglo, arreglo de caracteres ya procesado.
+*/
 char* split(const char* cadena) {
     int length = strlen(cadena);
     char* arreglo = malloc(length + 1);
